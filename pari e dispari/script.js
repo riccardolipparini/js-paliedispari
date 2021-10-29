@@ -14,15 +14,8 @@ const chooseNum = parseInt(prompt("inserisci un numero da 1 a 5"));
 
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 
-
-
-
-
 function pcRandom(max, min) {
     return Math.floor(Math.random() * (max - min) + min);
-
-    
-
 }
 
 // Salviamo la funzione in una variabile
@@ -38,15 +31,15 @@ console.log(sum);
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 
 function pariODispari(choose) {
-    let = risultato;
+    let risultato;
     if (choose === "pari" && sum % 2 == 0) {
-        risultato = ("Hai vinto!");
+        risultato = "Hai vinto!";
 
     } else if (choose === "dispari" && sum % 2 !== 0) {
-        risultato = ("Hai vinto!")
+        risultato = "Hai vinto!";
 
     } else {
-        risultato = ("Hai perso! :(")
+        risultato = "Hai perso! :(";
     }
 
     return risultato;
@@ -54,6 +47,7 @@ function pariODispari(choose) {
 
 // Salviamo la funzione in una variabile
 
-let winLoose = pariODispari(result);
+let winLoose = pariODispari(choose);
+contain.innerHTML= winLoose;
 
 
